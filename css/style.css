@@ -117,7 +117,9 @@ img {
 }
 
 #panel1 .log_wrp {
-	background: url("../img/white1");
+	background: url("../img/white1.png");
+	display: inline-block;
+width: 100%;
 }
 
 #panel1 .logo {
@@ -127,8 +129,9 @@ img {
 
 #panel1 .social {
 	list-style: none;
-	display: inline-block;
-	padding: 0px 33%;
+	display: block;
+	margin: 0 auto;
+width: 380px;
 }
 
 #panel1 .social li {
