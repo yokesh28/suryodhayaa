@@ -28,8 +28,9 @@ img {
 	width: 70%;
 	position: absolute;
 	z-index: 1;
-	top: 20%;
+	top: 7%;
 	left: 15%;
+	
 }
 
 #panel1 .logo {
@@ -89,4 +90,19 @@ img {
 	height: 107px;
 	display: inline-block;
 	background-position: 86px 0;
+}
+#panel1 .menu_home{
+	border-top: 2px solid #ED3439;
+	margin: 0;
+	list-style: none;
+}
+
+#panel1 .menu_home li{
+	background-image: url("../img/social_hover.png");
+	float: left;
+}
+#panel1 .menu_home li a{
+	text-transform: uppercase;
+	color: #44403F;
+	text-decoration: none;
 }
