@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: champa;
+}
+
+@font-face {
+	font-family: champa;
+	src: url('Champagne&Limousines.ttf');
+	/* url('Sansation_Light.eot');  IE9 */
+}
+
+img {
+	margin: 0;
+	padding: 0px;
+}
+
+#panel1>img {
+	position: relative;
+	width: 100%;
+	max-height: 100%;
+}
+
+#panel1 .wrapper {
+	background: url("../img/white1");
+	width: 70%;
+	position: absolute;
+	z-index: 1;
+	top: 20%;
+	left: 15%;
+}
+
+#panel1 .logo {
+	padding: 15px 25%;
+	display: inline-block;
+}
+
+#panel1 .social {
+	list-style: none;
+	display: inline-block;
+	padding: 0px 33%;
+}
+
+#panel1 .social li {
+	float: left;
+	margin: 0 20px;
+}
+
+#panel1 .facebook {
+	width: 60px;
+	background-image: url("../img/social.png");
+	height: 107px;
+	display: inline-block;
+}
+
+#panel1 .twitter {
+	width: 90px;
+	background-image: url("../img/social.png");
+	height: 107px;
+	display: inline-block;
+	background-position: 230px 0;
+}
+#panel1 .youtube{
+		width: 90px;
+	background-image: url("../img/social.png");
+	height: 107px;
+	display: inline-block;
+	background-position: 86px 0;
+}
+#panel1 .facebook:HOVER {
+	width: 60px;
+	background-image: url("../img/social_hover.png");
+	height: 107px;
+	display: inline-block;
+}
+
+#panel1 .twitter:HOVER  {
+	width: 90px;
+	background-image: url("../img/social_hover.png");
+	height: 107px;
+	display: inline-block;
+	background-position: 230px 0;
+}
+#panel1 .youtube:HOVER {
+		width: 90px;
+	background-image: url("../img/social_hover.png");
+	height: 107px;
+	display: inline-block;
+	background-position: 86px 0;
+}
