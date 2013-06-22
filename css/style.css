@@ -1,5 +1,90 @@
 @CHARSET "UTF-8";
 
+/** * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) * Richard Clark (http://richclarkdesign.com) * http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+a{
+	text-decoration: none;
+	 color: #44403F;
+}
+a:HOVER{
+	color: #ED3438;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+	{
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+} /* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+} /* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} /* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,select {
+	vertical-align: middle;
+}
+
 body {
 	margin: 0;
 	overflow-x: hidden;
@@ -24,13 +109,15 @@ img {
 }
 
 #panel1 .wrapper {
-	background: url("../img/white1");
 	width: 70%;
 	position: absolute;
 	z-index: 1;
 	top: 7%;
 	left: 15%;
-	
+}
+
+#panel1 .log_wrp {
+	background: url("../img/white1");
 }
 
 #panel1 .logo {
@@ -63,13 +150,15 @@ img {
 	display: inline-block;
 	background-position: 230px 0;
 }
-#panel1 .youtube{
-		width: 90px;
+
+#panel1 .youtube {
+	width: 90px;
 	background-image: url("../img/social.png");
 	height: 107px;
 	display: inline-block;
 	background-position: 86px 0;
 }
+
 #panel1 .facebook:HOVER {
 	width: 60px;
 	background-image: url("../img/social_hover.png");
@@ -77,32 +166,155 @@ img {
 	display: inline-block;
 }
 
-#panel1 .twitter:HOVER  {
+#panel1 .twitter:HOVER {
 	width: 90px;
 	background-image: url("../img/social_hover.png");
 	height: 107px;
 	display: inline-block;
 	background-position: 230px 0;
 }
+
 #panel1 .youtube:HOVER {
-		width: 90px;
+	width: 90px;
 	background-image: url("../img/social_hover.png");
 	height: 107px;
 	display: inline-block;
 	background-position: 86px 0;
 }
-#panel1 .menu_home{
+
+#panel1 .menu_home {
 	border-top: 2px solid #ED3439;
 	margin: 0;
 	list-style: none;
+	display: inline-block;
+	padding: 0px;
+	width: 100%;
 }
 
-#panel1 .menu_home li{
-	background-image: url("../img/social_hover.png");
+#panel1 .menu_home li {
+	background-image: url("../img/menu-trans.png");
+	float: left;
+	padding: 30px 12.8px;
+	margin-right: 0.3%;
+}
+
+#panel1 .menu_home li:HOVER {
+	background-image: url("../img/white1.png");
+}
+
+#panel1 .menu_home li:last-child {
+	margin: 0;
+}
+
+#panel1 .menu_home li a {
+	color: #44403F;
+    height: 130px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 184.0px;
+}
+
+.menu_home a {
+	background-image: url("../img/menu_icon.png");
+	display: block;
+}
+
+.menu_home a.home {
+background-position: 10px 11px;
+
+}
+
+.menu_home a.about {
+	  background-position: 5px -89px;
+
+}
+
+.menu_home a.process {
+	   background-position: 0 -183px;
+
+}
+
+.menu_home a.infras {
+background-position: 0 206px;
+	
+}
+
+.menu_home a.contact {
+	background-position: 0 113px;
+
+}
+
+.menu_home a:HOVER {
+	background-image: url("../img/menu_icon_hover.png");
+	display: block;
+}
+
+.menu_home a.home:HOVER {
+background-position: 10px 11px;
+
+}
+
+.menu_home a.about:HOVER {
+	  background-position: 5px -89px;
+
+}
+
+.menu_home a.process:HOVER {
+	   background-position: 0 -183px;
+
+}
+
+.menu_home a.infras:HOVER {
+background-position: 0 206px;
+	
+}
+
+.menu_home a.contact:HOVER {
+	background-position: 0 113px;
+
+}
+
+
+.menu_home a.home span{
+	margin: 116px 70px 0px;
+display: inline-block;
+}
+.menu_home a.about span{
+	display: inline-block;
+margin: 115px 46px;
+	
+}
+.menu_home a.infras span{
+	display: inline-block;
+margin: 115px 18px 0px;
+}
+
+.menu_home a.process span{
+	display: inline-block;
+margin: 113px 56px 0px;
+}
+.menu_home a.contact span{
+	display: inline-block;
+margin: 115px 35px 0px;
+}
+
+/* Panel 2*/
+#panel2 .menu>a {
 	float: left;
 }
-#panel1 .menu_home li a{
-	text-transform: uppercase;
-	color: #44403F;
-	text-decoration: none;
+
+#panel2 .menu_float {
+	list-style: none;
+}
+
+#panel2 .menu_float li {
+	list-style: none;
+	float: left;
+}
+
+#panel2 .menu_float li a {
+	display: inline-block;
+    font-size: 26px;
+    padding: 64px 38px;
+    text-transform: uppercase;
 }
