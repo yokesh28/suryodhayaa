@@ -13,9 +13,14 @@
 	
 	<!-- JS functions -->
 	<script src="js/function.js"></script>
+	
 </head>     
 <body>
-	<div id="panel1">
+<div id="preloader">
+		<img src="img/loading.gif" alt="Suryodhayaa">
+	</div>
+
+	<div id="panel1" class="container">
 		<img src="bg/bg.jpg" alt="Suryodhayaa">
 		<div class="wrapper">
 			<div class="log_wrp">
@@ -486,8 +491,15 @@ padding: 3px;">R.JAGANNATHAN</h2><h3>Managing director</h3>
 	
 	</div>
 	
-	
+	<script type="text/javascript">
+	$(".container img.hm_back").attr('src', 'img/logo-main1.png').load(function() {
+		 hidePreloader();
 
+			loadMenu();
+
+		});
+
+	</script>
 	
 	
 
